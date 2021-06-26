@@ -994,3 +994,8 @@ blockquote {
   font-size: 28px;
   top: -10% !important;
 }
+@media (max-width: 768px) {
+  .about li{
+    padding-left: 0%;
+  }
+}
