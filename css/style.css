@@ -917,7 +917,7 @@ blockquote {
   .works-item img {
     width: 100%; }
   .works-item .overlay {
-    background-color: #674cace1;
+    background-color: #2f2f31e1;
     position: absolute;
     left: 0;
     top: 0;
@@ -949,8 +949,8 @@ blockquote {
     -o-transform: translate3d(0px, 0px, 0px) scale(0);
     transform: translate3d(0px, 0px, 0px) scale(0); }
   .works-item h4 {
-    font-family: 'Courier New', Courier, monospace;
-    color: #daccff;
+    font-family: 'poppins';
+    color: #ffffff;
     font-weight: 500;
    }
   .works-item p {
