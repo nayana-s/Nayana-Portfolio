@@ -49,7 +49,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, .h1 {
-  font-size: 75px;
+  font-size: 70px;
+}
+h4 {
+  font-size: 20px;
 }
 
 @media (max-width: 991px) {
@@ -62,26 +65,27 @@ h2, .h2 {
   font-size: 60px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   h2, .h2 {
     font-size: 50px;
   }
-}
+
 
 h3, .h3 {
   font-size: 40px;
 }
 
 h4, .h4 {
-  font-size: 22px;
+  font-size: 18px;
 }
 
 h5, .h5 {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 h6, .h6 , p{
   font-size: 14px;
+}
 }
 
 /* Button style */
@@ -679,7 +683,7 @@ textarea.form-control {
   font-size: 18px;
 }
 .about li{
-  padding-left: 10%;
+  padding-left: 0%;
   font-size: 19px;
   line-height: 30px;
 }
@@ -695,6 +699,12 @@ textarea.form-control {
 @media (max-width: 768px) {
   .about li{
     padding-left: 0% !important;
+    font-size: 17px;
+  }
+  .para{
+    font-size: 17px !important;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
   }
 }
 .work-in img{
