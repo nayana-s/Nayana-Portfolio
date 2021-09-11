@@ -86,6 +86,8 @@
     }
     /* ########################################### /hero parallax ############################################## */
 
+    
+
     // testimonial-slider
     $('.testimonial-slider').slick({
         dots: true,

@@ -20,6 +20,7 @@
   <!-- Main Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/e6218787a7.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!--Favicon-->
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -358,6 +359,12 @@
 
 
 <!-- portfolio -->
+
+
+
+
+
+
 <!-- <section class="section port" id="works" id="contact">
   <div class="container">
     <div class="row">
@@ -423,7 +430,7 @@
       <div class="col-lg-8 mx-auto">
         <div class="bg-white  rounded text-center p-5 shadow-down">
           <h4 class="mb-80">Contact Form</h4>
-          <form action="Contact-form-handler.php" method="POST" class="row">
+          <form id="submit-form" action="" class="row">
             <div class="col-md-6">
               <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
             </div>
@@ -507,6 +514,26 @@
 <script src="js/jquery-validation.min.js"></script>
 <script src="js/form.min.js"></script>
 <script src="js/main.js"></script>
+
+<script>
+  $("#submit-form").submit((e)=>{
+      e.preventDefault()
+      $.ajax({
+          url:"https://script.google.com/macros/s/AKfycbzC12K19cnh6jXvt6J0uKwXpUBBTfQ61PHPu5rJgCGC4lHhPZHf/exec",
+          data:$("#submit-form").serialize(),
+          method:"post",
+          success:function (response){
+              alert("Form submitted successfully")
+              window.location.reload()
+              //window.location.href="https://google.com"
+          },
+          error:function (err){
+              alert("Something Error")
+
+          }
+      })
+  })
+</script>
 
 </body>
 </html>
